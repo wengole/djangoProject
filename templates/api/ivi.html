@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IVI for {{ consumer.first_name }}</title>
+</head>
+<body>
+    <h1>Welcome {{ consumer.first_name }}</h1>
+    <form action="{{ form_action }}" method="post">
+        <input type="hidden" name="_method" value="patch" />
+        <label for="income"><input id="income" type="number" name="income"/></label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
